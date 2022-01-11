@@ -77,6 +77,13 @@ void show_array_function(void) {
     printf("array count: %lu", sizeof(arr));
 }
 
+void do_string_operation_function(void) {
+    char str1[] = "Hello";
+    
+    // 計算字串長度
+    printf("%ld", strlen(str1));
+}
+
 struct body_t {
     char name[1024];
     int year;
@@ -89,4 +96,3 @@ union data_t {
     double dl;
     int i;
 };
-
