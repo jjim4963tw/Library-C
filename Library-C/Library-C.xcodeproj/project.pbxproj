@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89053D7427996F9C000E6F13 /* hash_map.c in Sources */ = {isa = PBXBuildFile; fileRef = 89053D7327996F9C000E6F13 /* hash_map.c */; };
 		89AE882A2785757C0054EC6C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 89AE88292785757C0054EC6C /* main.c */; };
 		89AE88322785792E0054EC6C /* basic_data.c in Sources */ = {isa = PBXBuildFile; fileRef = 89AE88312785792E0054EC6C /* basic_data.c */; };
 		89DD6DAC278D300600759C58 /* basic_function.c in Sources */ = {isa = PBXBuildFile; fileRef = 89DD6DAB278D300600759C58 /* basic_function.c */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		89053D7227996F9C000E6F13 /* hash_map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash_map.h; sourceTree = "<group>"; };
+		89053D7327996F9C000E6F13 /* hash_map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hash_map.c; sourceTree = "<group>"; };
 		89AE88262785757C0054EC6C /* Library-C */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Library-C"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89AE88292785757C0054EC6C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		89AE88302785792E0054EC6C /* basic_data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = basic_data.h; sourceTree = "<group>"; };
@@ -44,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89053D7127996F78000E6F13 /* hash_map */ = {
+			isa = PBXGroup;
+			children = (
+				89053D7327996F9C000E6F13 /* hash_map.c */,
+				89053D7227996F9C000E6F13 /* hash_map.h */,
+			);
+			path = hash_map;
+			sourceTree = "<group>";
+		};
 		89AE881D2785757C0054EC6C = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +75,7 @@
 		89AE88282785757C0054EC6C /* Library-C */ = {
 			isa = PBXGroup;
 			children = (
+				89053D7127996F78000E6F13 /* hash_map */,
 				89AE88292785757C0054EC6C /* main.c */,
 				89AE88302785792E0054EC6C /* basic_data.h */,
 				89AE88312785792E0054EC6C /* basic_data.c */,
@@ -129,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89053D7427996F9C000E6F13 /* hash_map.c in Sources */,
 				89AE88322785792E0054EC6C /* basic_data.c in Sources */,
 				89DD6DAC278D300600759C58 /* basic_function.c in Sources */,
 				89AE882A2785757C0054EC6C /* main.c in Sources */,
@@ -252,6 +266,7 @@
 		89AE882E2785757C0054EC6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7ZY9GQL2C;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -262,6 +277,7 @@
 		89AE882F2785757C0054EC6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7ZY9GQL2C;
 				ENABLE_HARDENED_RUNTIME = YES;
